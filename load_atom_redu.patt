@@ -1,0 +1,14 @@
+#triggered input_line use_table threshold_counts_per_second if_success_table if_failure_table time_to_trigger [bits to turn on(0-25)]
+#sequential [repeat_table(at least 0)] use_table end_table time [bits to turn on(0-25)] 
+#conditional input_line use_table if_success_table trigger_width [bits to turn on(0-25)]
+
+sequential 0 0 1 10 ms 16 17;
+
+sequential 0 1 2 20 ms 18 19;
+
+sequential 0 2 3 30 ms 20 21; #atom lost
+
+sequential 0 3 4 40 ms 22 23; #atom lost
+
+sequential 0 4 0 50 ms 24; #atom lost
+.

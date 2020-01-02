@@ -1,0 +1,33 @@
+#parameter registers
+config 0;
+param 0 0 0 0 0 10 100 0 0;
+holdadr; ramprog;
+#table 0
+writew 0,3,9,4112;#row 0
+writew 0,3,65535,4352;#row 1
+writew 0,3,34462,49153;#row 2
+#table 1
+writew 0,12,9,4112;#row 3
+writew 0,12,65535,4352;#row 4
+writew 0,12,65535,6;#row 5
+writew 0,12,65535,7;#row 6
+writew 0,12,3390,49156;#row 7
+#table 2
+writew 0,48,9,4112;#row 8
+writew 0,48,65535,4352;#row 9
+writew 0,48,65535,11;#row 10
+writew 0,48,65535,12;#row 11
+writew 0,48,65535,13;#row 12
+writew 0,48,37854,49161;#row 13
+#table 3
+writew 0,192,99,4128;#row 14
+writew 0,192,19998,4608;#row 15
+writew 0,192,19998,17;#row 16
+writew 0,192,0,53263;#row 17
+#table 4
+writew 0,256,99,4128;#row 18
+writew 0,256,24998,4608;#row 19
+writew 0,256,24998,21;#row 20
+writew 0,256,0,53267;#row 21
+writew 0,256,0,0;#row 22
+run; #start sequences
